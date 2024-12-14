@@ -1063,6 +1063,30 @@ textarea:focus, input:focus {
     border-top: 1px solid #eee;
 }
 
+.social-links {
+    margin-top: 1rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
 /* Snow animation */
 .snow-container {
     position: fixed;
