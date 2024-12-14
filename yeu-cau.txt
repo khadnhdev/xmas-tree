@@ -1,0 +1,19 @@
+dựng một ứng dụng web nhỏ với các chức năng sau:
+
+Tính năng chính:
+
+Người dùng nhập lời chúc Giáng Sinh.
+Hoặc nhấn nút để AI gợi ý một lời chúc (sử dụng OpenAI API).
+Thiệp sẽ hiển thị lời chúc dưới hình cây thông Giáng Sinh (dùng HTML và CSS để tạo giao diện).
+Sau khi hoàn thành, người dùng có thể nhấn "Publish" để tạo link duy nhất cho thiệp và copy link đó để gửi cho người khác.
+Công nghệ sử dụng:
+
+Frontend: HTML, CSS (để hiển thị thiệp) và JavaScript (xử lý tương tác người dùng).
+Backend: Node.js và Express (để tạo link động và lưu trữ dữ liệu lời chúc).
+Database: SQLite hoặc một JSON file đơn giản để lưu lời chúc và link.
+Giao diện người dùng:
+
+Một khung nhập lời chúc và nút "Gợi ý từ AI".
+Một khung xem trước thiệp Giáng Sinh.
+Nút "Publish" để tạo link.
+Nút "Copy Link" để người dùng gửi link đi.

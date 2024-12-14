@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Giáng Sinh - Tạo thiệp độc đáo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="snow-container"></div>
+    <div class="container">
+        <div class="hero-section">
+            <h1 class="main-title">Tạo Thiệp Giáng Sinh</h1>
+            <p class="subtitle">Tạo và chia sẻ những lời chúc ý nghĩa đến người thân yêu của bạn</p>
+        </div>
+
+        <div class="card-creator">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="create">
+                    <i class="fas fa-pen"></i> Tạo thiệp
+                </button>
+                <button class="tab-btn" data-tab="preview">
+                    <i class="fas fa-eye"></i> Xem trước
+                </button>
+            </div>
+
+            <div class="tab-content" id="createTab">
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="message">Lời chúc của bạn</label>
+                        <textarea 
+                            id="message" 
+                            placeholder="Viết lời chúc Giáng sinh tại đây..."
+                            rows="4"
+                        ></textarea>
+                    </div>
+                    <button id="generateAI" class="btn ai-btn">
+                        <i class="fas fa-magic"></i> Gợi ý từ AI
+                    </button>
+                </div>
+
+                <div class="custom-link-section">
+                    <div class="input-group">
+                        <label for="customLink">Link tùy chỉnh (tùy chọn)</label>
+                        <input 
+                            type="text" 
+                            id="customLink" 
+                            placeholder="VD: chuc-mung-giang-sinh"
+                            pattern="[a-zA-Z0-9-_]+"
+                        >
+                        <small class="hint">Chỉ sử dụng chữ cái, số và dấu - _ (3-50 ký tự)</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content preview-section" id="previewTab" style="display: none;">
+                <div class="christmas-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="front-content">
+                                <div class="christmas-tree">
+                                    <div class="star">★</div>
+                                    <div class="tree-top"></div>
+                                    <div class="tree-middle"></div>
+                                    <div class="tree-bottom"></div>
+                                    <div class="trunk"></div>
+                                    <div class="tree-lights">
+                                        <!-- Lights -->
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                    </div>
+                                    <div class="ornaments">
+                                        <!-- Ornaments -->
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                    </div>
+                                </div>
+                                <div class="click-hint">Click để mở thiệp ↗️</div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <div class="christmas-tree">
+                                    <!-- Tree content same as front -->
+                                    <div class="star">★</div>
+                                    <div class="tree-top"></div>
+                                    <div class="tree-middle"></div>
+                                    <div class="tree-bottom"></div>
+                                    <div class="trunk"></div>
+                                    <div class="tree-lights">
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                        <div class="light"></div>
+                                    </div>
+                                    <div class="ornaments">
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                        <div class="ornament"></div>
+                                    </div>
+                                </div>
+                                <div class="message" id="previewMessage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="publish" class="btn primary">
+                    <i class="fas fa-gift"></i> Tạo thiệp
+                </button>
+                <div class="share-section" style="display: none;">
+                    <div class="share-group">
+                        <input type="text" id="shareLink" readonly>
+                        <button id="copyLink" class="btn">
+                            <i class="fas fa-copy"></i> Sao chép link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>🎄 Tạo những khoảnh khắc đáng nhớ trong mùa Giáng sinh này</p>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html> 
